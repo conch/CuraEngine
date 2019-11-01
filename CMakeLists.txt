@@ -1,9 +1,9 @@
 #Copyright (c) 2019 Ultimaker B.V.
 #CuraEngine is released under the terms of the AGPLv3 or higher.
 
-project(CuraEngine)
-
 cmake_minimum_required(VERSION 3.6.0)
+
+project(CuraEngine)
 
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
