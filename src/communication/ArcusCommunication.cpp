@@ -497,6 +497,7 @@ void ArcusCommunication::sliceNext()
     private_data->readGlobalSettingsMessage(slice_message->global_settings());
     private_data->readExtruderSettingsMessage(slice_message->extruders());
     const size_t extruder_count = slice.scene.extruders.size();
+		log("extruder count = " + extruder_count);
 
     //For each setting, register what extruder it should be obtained from (if this is limited to an extruder).
     for (const cura::proto::SettingExtruder& setting_extruder : slice_message->limit_to_extruder())
